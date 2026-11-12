@@ -1,5 +1,6 @@
-import {
+﻿import {
   ArrowDown,
+  Download,
   ArrowUpRight,
   Code2,
   GraduationCap,
@@ -153,20 +154,21 @@ function App() {
           </button>
 
           <div className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`}>
-            {navigation.map((item) => (
-              <a key={item.label} href={item.href} onClick={closeMenu}>
-                {item.label}
+            <div className="nav-menu">
+              {navigation.map((item) => (
+                <a key={item.label} href={item.href} onClick={closeMenu}>
+                  {item.label}
+                </a>
+              ))}
+            </div>
+            <div className="nav-socials">
+              <a className="nav-icon-link" href="https://github.com/nibirshafuan" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <GitHubIcon />
               </a>
-            ))}
-            <a
-              className="nav-contact"
-              href="https://github.com/nibirshafuan"
-              target="_blank"
-              rel="noreferrer"
-              onClick={closeMenu}
-            >
-              GitHub <ArrowUpRight size={15} />
-            </a>
+              <a className="nav-icon-link" href="https://www.linkedin.com/in/nibirshafuan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <LinkedInIcon />
+              </a>
+            </div>
           </div>
         </nav>
       </header>
@@ -208,6 +210,13 @@ function App() {
                 >
                   <Code2 size={17} /> GitHub
                 </a>
+                <a
+                  className="button button-secondary"
+                  href="/Nibir_Shafuan_CV.pdf"
+                  download="Nibir_Shafuan_CV.pdf"
+                >
+                  <Download size={17} /> Download CV
+                </a>
               </div>
 
               <a className="scroll-cue" href="#about">
@@ -218,7 +227,7 @@ function App() {
             <div className="hero-visual">
               <div className="visual-topline">
                 <span>PORTFOLIO / 2026</span>
-                <span>01 â€” 06</span>
+                <span>01 Ã¢â‚¬â€ 06</span>
               </div>
               <div className="profile-frame">
                 <div className="frame-grid" />
@@ -246,7 +255,7 @@ function App() {
         <section className="section about-section" id="about">
           <div className="container">
             <div className="section-heading">
-              <p className="eyebrow">01 â€” ABOUT ME</p>
+              <p className="eyebrow">01 Ã¢â‚¬â€ ABOUT ME</p>
               <h2>
                 Curious mind.
                 <br />
@@ -257,11 +266,11 @@ function App() {
             <div className="about-grid">
               <div className="about-copy">
                 <p className="lead">
-                  Iâ€™m Nibir Shafuan, a Computer Science and Engineering student
+                  IÃ¢â‚¬â„¢m Nibir Shafuan, a Computer Science and Engineering student
                   at Daffodil International University.
                 </p>
                 <p>
-                  Iâ€™m passionate about software development and enjoy learning
+                  IÃ¢â‚¬â„¢m passionate about software development and enjoy learning
                   how technology can solve real-world problems. My interests
                   include frontend engineering, application development,
                   databases and exploring new tools.
@@ -304,7 +313,7 @@ function App() {
           <div className="container">
             <div className="section-heading section-heading-row">
               <div>
-                <p className="eyebrow">02 â€” MY TOOLKIT</p>
+                <p className="eyebrow">02 Ã¢â‚¬â€ MY TOOLKIT</p>
                 <h2>
                   Skills & <span>technologies.</span>
                 </h2>
@@ -342,7 +351,7 @@ function App() {
           <div className="container">
             <div className="section-heading section-heading-row">
               <div>
-                <p className="eyebrow">03 â€” SELECTED WORK</p>
+                <p className="eyebrow">03 Ã¢â‚¬â€ SELECTED WORK</p>
                 <h2>
                   Things I've <span>built.</span>
                 </h2>
@@ -416,7 +425,7 @@ function App() {
         <section className="section education-section" id="education">
           <div className="container">
             <div className="section-heading">
-              <p className="eyebrow">04 â€” EDUCATION</p>
+              <p className="eyebrow">04 Ã¢â‚¬â€ EDUCATION</p>
               <h2>
                 My learning <span>journey.</span>
               </h2>
@@ -441,7 +450,7 @@ function App() {
 
         <section className="section contact-section" id="contact">
   <div className="container contact-inner">
-    <p className="eyebrow">05 — GET IN TOUCH</p>
+    <p className="eyebrow">05 â€” GET IN TOUCH</p>
     <h2>
       Have an idea?
       <br />
@@ -502,7 +511,7 @@ function App() {
           >
             <Code2 size={19} />
           </a>
-          <span className="copyright">Â© 2026 Nibir Shafuan</span>
+          <span className="copyright">Ã‚Â© 2026 Nibir Shafuan</span>
         </div>
       </footer>
     </>
@@ -510,5 +519,6 @@ function App() {
 }
 
 export default App
+
 
 

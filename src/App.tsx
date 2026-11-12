@@ -49,27 +49,48 @@ const skills = [
 const projects = [
   {
     number: '01',
-    name: 'Dev Stack Builder',
-    category: 'Frontend Development',
+    name: 'Kindora',
+    category: 'Full-Stack Development',
     description:
-      'A developer-focused project built with React, TypeScript and Vite. A place to showcase practical frontend development and component-building skills.',
-    stack: ['React', 'TypeScript', 'Vite'],
+      'A community-driven social development platform that connects people with meaningful volunteer opportunities. Users can discover events, create activities, join events and manage their profiles.',
+    stack: ['Next.js', 'TypeScript', 'Express.js', 'MongoDB', 'Better Auth', 'JWT'],
+    github: 'https://github.com/nibirshafuan/kindora-client',
+    backend: 'https://github.com/nibirshafuan/kindora-server',
+    live: 'https://kindora-client-five.vercel.app',
+    featured: true,
   },
   {
     number: '02',
-    name: 'FitLog',
-    category: 'Web Application',
+    name: 'BazarDor',
+    category: 'Full-Stack Web Application',
     description:
-      'A workout tracking application built with Next.js and TypeScript, focused on organizing fitness activities through a modern web interface.',
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+      'A market price exploration platform where users can browse products, explore categories, check price movements and manage their accounts.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Better Auth'],
+    github: 'https://github.com/nibirshafuan/Bazar-Dor',
+    live: 'https://bazar-dor-psi-ashy.vercel.app/',
+    featured: true,
   },
   {
     number: '03',
-    name: 'Library Management System',
-    category: 'Database Application',
+    name: 'FitLog',
+    category: 'Fitness & API Integration',
     description:
-      'An academic project exploring library operations, data organization and database management using Java and SQL.',
-    stack: ['Java', 'SQL', 'Database'],
+      'A workout library and daily planning application. Users can explore exercises, view detailed instructions, create workout plans and save favourite workouts.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'REST API', 'LocalStorage'],
+    github: 'https://github.com/nibirshafuan/workout-tracker',
+    live: 'https://workout-tracker-henna-iota.vercel.app/',
+    featured: false,
+  },
+  {
+    number: '04',
+    name: 'Dev Stack Builder',
+    category: 'Frontend Development',
+    description:
+      'An interactive technology stack builder that helps developers explore technologies and create their own custom development stack.',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'DaisyUI'],
+    github: 'https://github.com/nibirshafuan/dev-stack-builder',
+    live: 'https://dev-stack-builder-psi.vercel.app/',
+    featured: false,
   },
 ]
 
@@ -309,6 +330,34 @@ function App() {
                         <span key={item}>{item}</span>
                       ))}
                     </div>
+                    <div className="project-actions">
+                      <a
+                        className="project-link project-link-primary"
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Live Demo <ArrowUpRight size={15} />
+                      </a>
+                      <a
+                        className="project-link"
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        GitHub <ArrowUpRight size={15} />
+                      </a>
+                      {'backend' in project && project.backend && (
+                        <a
+                          className="project-link"
+                          href={project.backend}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Backend Repo <ArrowUpRight size={15} />
+                        </a>
+                      )}
+                    </div>
                   </div>
                   <div className="project-arrow" aria-hidden="true">
                     <ArrowUpRight size={22} />
@@ -316,10 +365,7 @@ function App() {
                 </article>
               ))}
             </div>
-            <p className="projects-footnote">
-              More project details and repository links will be added after
-              verifying each project.
-            </p>
+
           </div>
         </section>
 

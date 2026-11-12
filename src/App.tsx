@@ -11,7 +11,6 @@ import {
   Layers3,
   Sparkles,
   Mail,
-  MessageCircle,
 } from 'lucide-react'
 import { useState } from 'react'
 import './App.css'

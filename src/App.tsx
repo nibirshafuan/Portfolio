@@ -1,4 +1,4 @@
-﻿import {
+import {
   ArrowDown,
   Download,
   ArrowUpRight,
@@ -227,7 +227,7 @@ function App() {
             <div className="hero-visual">
               <div className="visual-topline">
                 <span>PORTFOLIO / 2026</span>
-                <span>01 Ã¢â‚¬â€ 06</span>
+                <span>01 - 06</span>
               </div>
               <div className="profile-frame">
                 <div className="frame-grid" />
@@ -255,7 +255,7 @@ function App() {
         <section className="section about-section" id="about">
           <div className="container">
             <div className="section-heading">
-              <p className="eyebrow">01 Ã¢â‚¬â€ ABOUT ME</p>
+              <p className="eyebrow">01 - ABOUT ME</p>
               <h2>
                 Curious mind.
                 <br />
@@ -266,11 +266,11 @@ function App() {
             <div className="about-grid">
               <div className="about-copy">
                 <p className="lead">
-                  IÃ¢â‚¬â„¢m Nibir Shafuan, a Computer Science and Engineering student
+                  I'm Nibir Shafuan, a Computer Science and Engineering student
                   at Daffodil International University.
                 </p>
                 <p>
-                  IÃ¢â‚¬â„¢m passionate about software development and enjoy learning
+                  I'm passionate about software development and enjoy learning
                   how technology can solve real-world problems. My interests
                   include frontend engineering, application development,
                   databases and exploring new tools.
@@ -313,7 +313,7 @@ function App() {
           <div className="container">
             <div className="section-heading section-heading-row">
               <div>
-                <p className="eyebrow">02 Ã¢â‚¬â€ MY TOOLKIT</p>
+                <p className="eyebrow">02 - MY TOOLKIT</p>
                 <h2>
                   Skills & <span>technologies.</span>
                 </h2>
@@ -351,7 +351,7 @@ function App() {
           <div className="container">
             <div className="section-heading section-heading-row">
               <div>
-                <p className="eyebrow">03 Ã¢â‚¬â€ SELECTED WORK</p>
+                <p className="eyebrow">03 - PROJECTS</p>
                 <h2>
                   Things I've <span>built.</span>
                 </h2>
@@ -425,7 +425,7 @@ function App() {
         <section className="section education-section" id="education">
           <div className="container">
             <div className="section-heading">
-              <p className="eyebrow">04 Ã¢â‚¬â€ EDUCATION</p>
+              <p className="eyebrow">04 - EDUCATION</p>
               <h2>
                 My learning <span>journey.</span>
               </h2>
@@ -450,7 +450,7 @@ function App() {
 
         <section className="section contact-section" id="contact">
   <div className="container contact-inner">
-    <p className="eyebrow">05 â€” GET IN TOUCH</p>
+    <p className="eyebrow">05 - CONTACT</p>
     <h2>
       Have an idea?
       <br />
@@ -511,7 +511,7 @@ function App() {
           >
             <Code2 size={19} />
           </a>
-          <span className="copyright">Ã‚Â© 2026 Nibir Shafuan</span>
+          <span className="copyright">© 2026 Nibir Shafuan. All rights reserved.</span>
         </div>
       </footer>
     </>

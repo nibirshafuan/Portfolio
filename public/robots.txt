@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-six-liard-17.vercel.app/sitemap.xml
+Sitemap: https://nibirshafuan.vercel.app/sitemap.xml

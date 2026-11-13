@@ -53,7 +53,7 @@ const projects = [
     number: '01',
     name: 'Kindora',
     category: 'Full-Stack Development',
-    image: '/projects/kindora.png',
+    image: '/projects/kindora.webp',
     description:
       'A community-driven social development platform that connects people with meaningful volunteer opportunities. Users can discover events, create activities, join events and manage their profiles.',
     stack: ['Next.js', 'TypeScript', 'Express.js', 'MongoDB', 'Better Auth', 'JWT'],
@@ -66,7 +66,7 @@ const projects = [
     number: '02',
     name: 'BazarDor',
     category: 'Full-Stack Web Application',
-    image: '/projects/bazardor.png',
+    image: '/projects/bazardor.webp',
     description:
       'A market price exploration platform where users can browse products, explore categories, check price movements and manage their accounts.',
     stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Better Auth'],
@@ -78,7 +78,7 @@ const projects = [
     number: '03',
     name: 'FitLog',
     category: 'Fitness & API Integration',
-    image: '/projects/fitlog.png',
+    image: '/projects/fitlog.webp',
     description:
       'A workout library and daily planning application. Users can explore exercises, view detailed instructions, create workout plans and save favourite workouts.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'REST API', 'LocalStorage'],
@@ -90,7 +90,7 @@ const projects = [
     number: '04',
     name: 'Dev Stack Builder',
     category: 'Frontend Development',
-    image: '/projects/dev-stack-builder.png',
+    image: '/projects/dev-stack-builder.webp',
     description:
       'An interactive technology stack builder that helps developers explore technologies and create their own custom development stack.',
     stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'DaisyUI'],
@@ -231,7 +231,7 @@ function App() {
               </div>
               <div className="profile-frame">
                 <div className="frame-grid" />
-                <img className="profile-photo" src="/profile.png" alt="Nibir Shafuan - Developer" />
+                <img className="profile-photo" src="/profile.webp" alt="Nibir Shafuan - Developer" />
                 <div className="profile-caption">
                   <span className="caption-line" />
                   <span>BUILDING WITH CURIOSITY</span>
@@ -519,6 +519,7 @@ function App() {
 }
 
 export default App
+
 
 
 

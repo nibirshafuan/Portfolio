@@ -1,4 +1,4 @@
-import {
+﻿import {
   ArrowDown,
   Download,
   ArrowUpRight,
@@ -212,8 +212,8 @@ function App() {
                 </a>
                 <a
                   className="button button-secondary"
-                  href="/Nibir_Shafuan_CV.pdf"
-                  download="Nibir_Shafuan_CV.pdf"
+                  href="/Nibir%20Shafuan.pdf"
+                  download="Nibir Shafuan.pdf"
                 >
                   <Download size={17} /> Download CV
                 </a>
@@ -511,7 +511,7 @@ function App() {
           >
             <Code2 size={19} />
           </a>
-          <span className="copyright">© 2026 Nibir Shafuan. All rights reserved.</span>
+          <span className="copyright">Â© 2026 Nibir Shafuan. All rights reserved.</span>
         </div>
       </footer>
     </>
@@ -519,6 +519,7 @@ function App() {
 }
 
 export default App
+
 
 
 
